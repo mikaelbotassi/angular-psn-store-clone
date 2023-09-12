@@ -1,0 +1,13 @@
+.card{
+  height: 500px;
+  overflow: hidden;
+}
+
+.card:has(a.stretched-link) img{
+  transition: transform .2s ease-in-out;
+}
+
+.card:has(a.stretched-link:hover) img{
+  transform: scale(1.1);
+  transition: transform .2s ease-in-out;
+}
